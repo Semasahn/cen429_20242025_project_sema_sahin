@@ -1,0 +1,135 @@
+#include "main_menu.h"
+
+void MainMenu::displayMenu() {
+    std::cout << "\n--- Travel Expense Tracker ---\n";
+    std::cout << "1. Register\n";
+    std::cout << "2. Login\n";
+    std::cout << "3. Record Expense\n";
+    std::cout << "4. Generate Summary\n";
+    std::cout << "5. Plan a Trip\n";
+    std::cout << "0. Exit\n";
+    std::cout << "Please select an option: ";
+}
+
+void MainMenu::handleUserSelection() {
+    int choice;
+    do {
+        displayMenu();
+        std::cin >> choice;
+
+        switch (choice) {
+        case 1:
+            registerUser();
+            break;
+        case 2:
+            loginUser();
+            break;
+        case 3:
+            recordExpense();
+            break;
+        case 4:
+            generateSummary();
+            break;
+        case 5:
+            planTrip();
+            break;
+        case 0:
+            std::cout << "Exiting the application. Goodbye!\n";
+            break;
+        default:
+            std::cout << "Invalid choice. Please try again.\n";
+        }
+    } while (choice != 0);
+}
+
+#include <sqlite3.h> // SQLite3 kütüphanesini ekleyin
+#include <iostream>
+#include <string>
+
+void MainMenu::registerUser() {
+    sqlite3* db;
+    char* errorMessage = nullptr;
+    int exitCode;
+
+    // Veritabanýný aç veya oluþtur
+    exitCode = sqlite3_open("travelexpensetracker.db", &db);
+    if (exitCode) {
+        std::cerr << "Error opening database: " << sqlite3_errmsg(db) << "\n";
+        return;
+    }
+
+    // Kullanýcýlar tablosunu oluþtur (eðer yoksa)
+    const char* createTableSQL =
+        "CREATE TABLE IF NOT EXISTS Users ("
+        "ID INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "Username TEXT NOT NULL UNIQUE, "
+        "Password TEXT NOT NULL);";
+
+    exitCode = sqlite3_exec(db, createTableSQL, nullptr, nullptr, &errorMessage);
+    if (exitCode != SQLITE_OK) {
+        std::cerr << "Error creating table: " << errorMessage << "\n";
+        sqlite3_free(errorMessage);
+        sqlite3_close(db);
+        return;
+    }
+
+    // Kullanýcýdan giriþ al
+    std::cout << "\n--- User Registration ---\n";
+    std::string username, password;
+    std::cout << "Enter username: ";
+    std::cin >> username;
+    std::cout << "Enter password: ";
+    std::cin >> password;
+
+    // SQL sorgusunu hazýrlayýn ve çalýþtýrýn
+    std::string insertSQL =
+        "INSERT INTO Users (Username, Password) VALUES ('" + username + "', '" + password + "');";
+    exitCode = sqlite3_exec(db, insertSQL.c_str(), nullptr, nullptr, &errorMessage);
+    if (exitCode != SQLITE_OK) {
+        if (errorMessage) {
+            std::cerr << "Error inserting user: " << errorMessage << "\n";
+            sqlite3_free(errorMessage);
+        }
+        else {
+            std::cerr << "Error inserting user.\n";
+        }
+    }
+    else {
+        std::cout << "User " << username << " registered successfully!\n";
+    }
+
+    // Veritabanýný kapat
+    sqlite3_close(db);
+}
+
+
+void MainMenu::loginUser() {
+    std::cout << "\n--- User Login ---\n";
+    std::string username, password;
+    std::cout << "Enter username: ";
+    std::cin >> username;
+    std::cout << "Enter password: ";
+    std::cin >> password;
+    std::cout << "User " << username << " logged in successfully!\n";
+}
+
+void MainMenu::recordExpense() {
+    std::cout << "\n--- Record Expense ---\n";
+    std::string category;
+    double amount;
+    std::cout << "Enter expense category: ";
+    std::cin >> category;
+    std::cout << "Enter expense amount: ";
+    std::cin >> amount;
+    std::cout << "Expense of " << amount << " in category " << category << " recorded successfully!\n";
+}
+
+void MainMenu::generateSummary() {
+    std::cout << "\n--- Generate Summary ---\n";
+    std::cout << "Summary generation functionality coming soon!\n";
+}
+
+void MainMenu::planTrip() {
+    std::cout << "\n--- Plan a Trip ---\n";
+    std::cout << "Trip planning functionality coming soon!\n";
+}

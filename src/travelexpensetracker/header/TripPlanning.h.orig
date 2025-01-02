@@ -1,0 +1,18 @@
+#ifndef TRIPPLANNING_H
+#define TRIPPLANNING_H
+
+#include <string>
+#include <vector>
+
+class TripPlanning {
+public:
+    void createTrip(const std::string& destination);
+    void viewTrips() const;
+    void editTrip(int tripId, const std::string& newDestination);
+    void deleteTrip(int tripId);
+
+private:
+    std::vector<std::string> trips;
+};
+
+#endif

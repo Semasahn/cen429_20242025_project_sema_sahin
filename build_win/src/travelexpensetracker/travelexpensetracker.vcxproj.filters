@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\BudgetManagement.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\ExpenseRecording.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\SummaryReport.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\TravelExpenseTrackerApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\TripPlanning.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\UserAuthentication.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\main_menu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\BudgetManagement.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\ExpenseRecording.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\SummaryReport.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\TravelExpenseTrackerApp.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\TripPlanning.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\UserAuthentication.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\main_menu.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\sqlite3.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\header\sqlite3ext.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{8A8B1889-A01F-3727-9F6B-E56F62348F87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{24FE0FB3-EAD9-326A-A24F-2456ED8D436D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

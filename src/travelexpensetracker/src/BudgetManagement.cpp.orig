@@ -1,0 +1,17 @@
+#include "BudgetManagement.h"
+#include <iostream>
+
+void BudgetManagement::setBudget(double amount) {
+    budget = amount;
+    std::cout << "Budget set to: " << budget << " USD" << std::endl;
+}
+
+double BudgetManagement::viewBudget() const {
+    std::cout << "Current budget: " << budget << " USD" << std::endl;
+    return budget;
+}
+
+void BudgetManagement::editBudget(double newAmount) {
+    budget = newAmount;
+    std::cout << "Budget updated to: " << budget << " USD" << std::endl;
+}

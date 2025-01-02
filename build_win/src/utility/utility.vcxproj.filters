@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\utility\src\mathUtility.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\utility\header\commonTypes.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\utility\header\mathUtility.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\semas\OneDrive\Desktop\Z_\cen429_sema_sahin_elif_ak_cpp\src\utility\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{8A8B1889-A01F-3727-9F6B-E56F62348F87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{24FE0FB3-EAD9-326A-A24F-2456ED8D436D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

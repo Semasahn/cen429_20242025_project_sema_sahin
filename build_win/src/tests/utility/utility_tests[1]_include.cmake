@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/semas/OneDrive/Desktop/Z_/cen429_sema_sahin_elif_ak_cpp/build_win/src/tests/utility/utility_tests[1]_tests.cmake")
+  include("C:/Users/semas/OneDrive/Desktop/Z_/cen429_sema_sahin_elif_ak_cpp/build_win/src/tests/utility/utility_tests[1]_tests.cmake")
+else()
+  add_test(utility_tests_NOT_BUILT utility_tests_NOT_BUILT)
+endif()

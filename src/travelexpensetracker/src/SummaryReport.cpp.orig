@@ -1,0 +1,12 @@
+#include "SummaryReport.h"
+#include <iostream>
+
+void SummaryReport::generateReport() const {
+    std::cout << "Generating report..." << std::endl;
+    // Placeholder logic
+}
+
+void SummaryReport::viewReports() const {
+    std::cout << "Viewing reports..." << std::endl;
+    // Placeholder logic
+}

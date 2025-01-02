@@ -1,0 +1,10 @@
+#include "TravelExpenseTrackerApp.h"
+#include <iostream>
+
+#include "main_menu.h"
+
+int main() {
+  MainMenu menu;
+  menu.handleUserSelection();
+  return 0;
+}

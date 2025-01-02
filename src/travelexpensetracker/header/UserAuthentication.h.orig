@@ -1,0 +1,13 @@
+#ifndef USERAUTHENTICATION_H
+#define USERAUTHENTICATION_H
+
+#include <string>
+
+class UserAuthentication {
+public:
+    bool login(const std::string& username, const std::string& password);
+    bool registerUser(const std::string& username, const std::string& password);
+    void guestMode();
+};
+
+#endif

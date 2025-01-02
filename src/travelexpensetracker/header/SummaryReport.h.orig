@@ -1,0 +1,10 @@
+#ifndef SUMMARYREPORT_H
+#define SUMMARYREPORT_H
+
+class SummaryReport {
+public:
+    void generateReport() const;
+    void viewReports() const;
+};
+
+#endif

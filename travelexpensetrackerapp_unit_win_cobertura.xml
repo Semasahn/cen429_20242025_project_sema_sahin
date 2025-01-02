@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.3235294117647059" branch-rate="0" complexity="0" branches-covered="0" branches-valid="0" timestamp="1735693232" lines-covered="22" lines-valid="68" version="0">
+  <sources>
+    <source>C:</source>
+  </sources>
+  <packages>
+    <package name="C:\Users\semas\OneDrive\Desktop\Z\cen429_sema_sahin_elif_ak_cpp\build_win\build\Debug\travelexpensetrackerapp.exe" line-rate="0.3235294117647059" branch-rate="0" complexity="0">
+      <classes>
+        <class name="main_menu.cpp" filename="Users\semas\OneDrive\Desktop\Z\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetracker\src\main_menu.cpp" line-rate="0.28125" branch-rate="0" complexity="0">
+          <methods/>
+          <lines>
+            <line number="3" hits="1"/>
+            <line number="4" hits="1"/>
+            <line number="5" hits="1"/>
+            <line number="6" hits="1"/>
+            <line number="7" hits="1"/>
+            <line number="8" hits="1"/>
+            <line number="9" hits="1"/>
+            <line number="10" hits="1"/>
+            <line number="11" hits="1"/>
+            <line number="12" hits="1"/>
+            <line number="14" hits="1"/>
+            <line number="18" hits="1"/>
+            <line number="19" hits="1"/>
+            <line number="21" hits="1"/>
+            <line number="23" hits="0"/>
+            <line number="24" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="28" hits="0"/>
+            <line number="31" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="35" hits="0"/>
+            <line number="36" hits="0"/>
+            <line number="39" hits="0"/>
+            <line number="40" hits="0"/>
+            <line number="43" hits="1"/>
+            <line number="44" hits="1"/>
+            <line number="47" hits="0"/>
+            <line number="49" hits="1"/>
+            <line number="50" hits="1"/>
+            <line number="55" hits="0"/>
+            <line number="56" hits="0"/>
+            <line number="57" hits="0"/>
+            <line number="58" hits="0"/>
+            <line number="59" hits="0"/>
+            <line number="60" hits="0"/>
+            <line number="61" hits="0"/>
+            <line number="62" hits="0"/>
+            <line number="63" hits="0"/>
+            <line number="66" hits="0"/>
+            <line number="67" hits="0"/>
+            <line number="68" hits="0"/>
+            <line number="69" hits="0"/>
+            <line number="70" hits="0"/>
+            <line number="71" hits="0"/>
+            <line number="72" hits="0"/>
+            <line number="73" hits="0"/>
+            <line number="74" hits="0"/>
+            <line number="76" hits="0"/>
+            <line number="77" hits="0"/>
+            <line number="78" hits="0"/>
+            <line number="80" hits="0"/>
+            <line number="81" hits="0"/>
+            <line number="82" hits="0"/>
+            <line number="83" hits="0"/>
+            <line number="84" hits="0"/>
+            <line number="85" hits="0"/>
+            <line number="87" hits="0"/>
+            <line number="88" hits="0"/>
+            <line number="89" hits="0"/>
+            <line number="90" hits="0"/>
+            <line number="92" hits="0"/>
+            <line number="93" hits="0"/>
+            <line number="94" hits="0"/>
+            <line number="95" hits="0"/>
+          </lines>
+        </class>
+        <class name="travelexpensetrackerapp.cpp" filename="Users\semas\OneDrive\Desktop\Z\cen429_sema_sahin_elif_ak_cpp\src\travelexpensetrackerapp\src\travelexpensetrackerapp.cpp" line-rate="1" branch-rate="0" complexity="0">
+          <methods/>
+          <lines>
+            <line number="6" hits="1"/>
+            <line number="8" hits="1"/>
+            <line number="9" hits="1"/>
+            <line number="10" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

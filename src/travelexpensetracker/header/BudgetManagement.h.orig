@@ -1,0 +1,15 @@
+#ifndef BUDGETMANAGEMENT_H
+#define BUDGETMANAGEMENT_H
+
+class BudgetManagement {
+public:
+    void setBudget(double amount);
+    double viewBudget() const;
+    void editBudget(double newAmount);
+
+private:
+    double budget;
+};
+
+#endif
+

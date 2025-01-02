@@ -1,0 +1,18 @@
+#include "UserAuthentication.h"
+#include <iostream>
+
+bool UserAuthentication::login(const std::string& username, const std::string& password) {
+    std::cout << "Logging in user: " << username << std::endl;
+    // Placeholder logic
+    return true;
+}
+
+bool UserAuthentication::registerUser(const std::string& username, const std::string& password) {
+    std::cout << "Registering user: " << username << std::endl;
+    // Placeholder logic
+    return true;
+}
+
+void UserAuthentication::guestMode() {
+    std::cout << "Entering guest mode..." << std::endl;
+}

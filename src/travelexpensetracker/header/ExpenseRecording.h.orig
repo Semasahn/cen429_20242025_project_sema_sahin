@@ -1,0 +1,23 @@
+#ifndef EXPENSERECORDING_H
+#define EXPENSERECORDING_H
+
+#include <string>
+#include <vector>
+
+struct Expense {
+    std::string description;
+    double amount;
+};
+
+class ExpenseRecording {
+public:
+    void logExpense(const std::string& description, double amount);
+    void viewExpenses() const;
+    void editExpense(int expenseId, const std::string& newDescription, double newAmount);
+    void deleteExpense(int expenseId);
+
+private:
+    std::vector<Expense> expenses;
+};
+
+#endif

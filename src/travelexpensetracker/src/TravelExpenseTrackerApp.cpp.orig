@@ -1,0 +1,12 @@
+#include "TravelExpenseTrackerApp.h"
+#include <iostream>
+
+void TravelExpenseTrackerApp::run() {
+    std::cout << "Welcome to Travel Expense Tracker!" << std::endl;
+    // Basic example flow
+    auth.guestMode();
+    planner.createTrip("Paris");
+    recorder.logExpense("Flight", 500);
+    budgetManager.setBudget(2000);
+    reporter.generateReport();
+}
